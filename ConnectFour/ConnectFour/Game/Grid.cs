@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace WpfApplication1
 {
-    public class Grid
+    interface IGrid
+    {
+
+        Player getCurrentPlayerAB();
+
+        void toggleCurrentPlayer();
+
+        void drop(int column);
+
+        Boolean isFull(int column);
+
+        Boolean hasWon();
+
+        Boolean isTie();
+
+    }
+    public class Grid : IGrid
     {
         /**
          * Kétdimenziós tömb, ez reprezentálja a táblát.

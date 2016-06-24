@@ -35,7 +35,6 @@ namespace WpfApplication1
             PlayerInformations b = new PlayerInformations(dlg.Name2);
             gameGrid.setPlayerA(a);
             gameGrid.setPlayerB(b);
-
         }
 
         private void draw(int column)
